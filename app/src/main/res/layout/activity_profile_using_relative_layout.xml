@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lytBlue"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#236386"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProfile"
+            android:layout_centerHorizontal="true"
+            android:text="Sok Sao"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/lytBlue"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txtMajorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Major" />
+
+        <TextView
+            android:id="@+id/txtMajorValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="IT Engineering" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMajorLabel"
+            android:text="Gender" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtMajorValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

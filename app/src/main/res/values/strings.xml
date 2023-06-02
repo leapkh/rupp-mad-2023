@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">VisitMe</string>
+
+    <!-- Main Menu -->
+    <string name="home">Home</string>
+    <string name="provinces">Provinces</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="more">More</string>
+
+    <string name="major">Major</string>
+    <string name="it_engineering">IT Engineering</string>
+    
+    <!-- Home Activity -->
+    <string name="hello_kim">Hello, Kim</string>
+    <string name="continue_to_mobile_app_dev_course">Continue to Mobile Dev. Course</string>
+    <string name="percents_compelete">65% Complete</string>
+</resources>

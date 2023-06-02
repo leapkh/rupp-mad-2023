@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/hello_kim"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgProfile" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_search"
+            android:drawableStart="@drawable/ic_search"
+            android:ems="10"
+            android:hint="@string/search"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/imgProfile"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfile" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="219dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary_color"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img_fe_logo" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:progress="50"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/continue_to_mobile_app_dev_course"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/progressBar"
+                    app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                    app:layout_constraintStart_toStartOf="@+id/progressBar" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/percents_compelete"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="@+id/progressBar"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Popular Course"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/primary_color"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/primary_color"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="@id/cardView1"
+                    app:layout_constraintStart_toEndOf="@id/cardView1"
+                    app:layout_constraintTop_toTopOf="@id/cardView1">
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/primary_color"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="@id/cardView2"
+                    app:layout_constraintStart_toEndOf="@id/cardView2"
+                    app:layout_constraintTop_toTopOf="@id/cardView2">
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/txtAllCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="All Courses"
+            app:layout_constraintStart_toStartOf="@id/cardView"
+            app:layout_constraintTop_toBottomOf="@id/horizontalScrollView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            app:layout_constraintBottom_toBottomOf="@id/txtAllCourses"
+            app:layout_constraintEnd_toEndOf="@id/cardView"
+            app:layout_constraintTop_toTopOf="@id/txtAllCourses" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/txtAllCourses"
+            app:layout_constraintTop_toBottomOf="@id/txtAllCourses" />
+
+        <ImageView
+            android:id="@+id/imgArrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="@id/cardViewLogo"
+            app:layout_constraintEnd_toEndOf="@id/cardView"
+            app:layout_constraintTop_toTopOf="@id/cardViewLogo" />
+
+        <TextView
+            android:id="@+id/txtCourseTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Mobile Application Dev. 1"
+            app:layout_constraintEnd_toStartOf="@id/imgArrowRight"
+            app:layout_constraintStart_toEndOf="@id/cardViewLogo"
+            app:layout_constraintTop_toTopOf="@id/cardViewLogo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Explore the power of Android application development"
+            app:layout_constraintEnd_toStartOf="@id/imgArrowRight"
+            app:layout_constraintStart_toStartOf="@id/txtCourseTitle"
+            app:layout_constraintTop_toBottomOf="@id/txtCourseTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
