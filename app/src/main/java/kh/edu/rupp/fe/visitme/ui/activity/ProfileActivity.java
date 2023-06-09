@@ -1,4 +1,4 @@
-package kh.edu.rupp.fe.visitme;
+package kh.edu.rupp.fe.visitme.ui.activity;
 
 import android.os.Bundle;
 

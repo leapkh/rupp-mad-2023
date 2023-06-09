@@ -1,21 +1,20 @@
-package kh.edu.rupp.fe.visitme;
+package kh.edu.rupp.fe.visitme.ui.activity;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.google.android.material.navigation.NavigationBarView;
-
+import kh.edu.rupp.fe.visitme.R;
 import kh.edu.rupp.fe.visitme.databinding.ActivityMainBinding;
+import kh.edu.rupp.fe.visitme.ui.fragment.HomeFragment;
+import kh.edu.rupp.fe.visitme.ui.fragment.MoreFragment;
+import kh.edu.rupp.fe.visitme.ui.fragment.ProfileFragment;
+import kh.edu.rupp.fe.visitme.ui.fragment.ProvincesFragment;
+import kh.edu.rupp.fe.visitme.ui.fragment.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 

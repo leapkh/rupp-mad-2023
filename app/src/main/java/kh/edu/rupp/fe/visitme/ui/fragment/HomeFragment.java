@@ -1,4 +1,4 @@
-package kh.edu.rupp.fe.visitme;
+package kh.edu.rupp.fe.visitme.ui.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

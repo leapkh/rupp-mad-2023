@@ -1,10 +1,8 @@
-package kh.edu.rupp.fe.visitme;
+package kh.edu.rupp.fe.visitme.ui.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package kh.edu.rupp.fe.visitme;
+package kh.edu.rupp.fe.visitme.ui.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,18 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import kh.edu.rupp.fe.visitme.databinding.FragmentMoreBinding;
-import kh.edu.rupp.fe.visitme.databinding.FragmentProfileBinding;
+import kh.edu.rupp.fe.visitme.databinding.FragmentProvincesBinding;
+import kh.edu.rupp.fe.visitme.databinding.FragmentSearchBinding;
 
-public class MoreFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
-    private FragmentMoreBinding binding;
+    private FragmentSearchBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        binding = FragmentMoreBinding.inflate(inflater, container, false);
+        binding = FragmentSearchBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
